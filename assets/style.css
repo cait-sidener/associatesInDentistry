@@ -1,36 +1,14 @@
-/*
-  Oh Hello!
-
-  These are some base styles so that our tutorial looks good.
-
-  Let's go through the important bits real quick
-*/
+/* General stuffs */
 :root {
-    --yellow: #ffc600;
     --black: #272727;
   }
-  
-  html {
-    /* border-box box model allows us to add padding and border to our elements without increasing their size */
-    box-sizing: border-box;
-    /* A system font stack so things load nice and quick! */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: var(--black);
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
-  }
-  
-  /*
-    WAT IS THIS?!
-    We inherit box-sizing: border-box; from our <html> selector
-    Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
-  */
+
   *,
   *:before,
   *:after {
     box-sizing: inherit;
   }
-
+  
   a:hover {
     color: var(--black);
   }
@@ -47,10 +25,10 @@
     background-image: url("./images/teeth2.png");
     min-height: calc(100vh - 100px);
     margin: 0px;
-    /* background: white; */
+    padding: 0px;
     background-attachment: fixed;
   }
-  
+
   h1,
   h2,
   h3,
@@ -61,22 +39,195 @@
     text-align: center;
   }
 
+  html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  }
+
   .image {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  /* Each item in our grid will contain numbers */
   .item {
-    /* We center the contents of these items. You can also do this with flexbox too! */
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #d2e5e5; /* best colour */
+    background-color: #d2e5e5;
     text-align: center;
   }
   
   .item p {
     margin: 0 0 5px 0;
   }
+
+.page-link {
+  background-color: #d2e5e5;
+  font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-areas: 
+    "header     header      header"
+    "content    content     content"
+    "sidebar-1  sidebar-1   sidebar-2"
+    "footer     footer      footer"
+  }
+}
+
+/* Specific stuffs */
+
+/* Container with header, sidebar, content, and footer */
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+    "header     header    header        header      header"
+    "sidebar-1  content   content       content     content"
+    ".          content   content       content     content"
+    "footer     footer    footer        footer      footer";
+}
+
+.container > .footer {
+  bottom: 0;
+  border: solid #a8b7b7; 
+
+  grid-area: footer;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  z-index: -1;
+}
+
+.container > .header {
+  border: solid #a8b7b7; 
+  grid-area: header;
+  grid-template-columns: 7fr 7fr;
+}
+
+.container > .item1 {
+  border: solid #a8b7b7; 
+  grid-area: sidebar-1;
+  position: sticky;
+  top: 50px;
+}
+
+.container > .item2 {
+  border: solid #a8b7b7; 
+  grid-area: content;
+  z-index: -2
+}
+
+/* About Section */
+  .about {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: 150px 150px 150px;
+}
+
+.card-experience {
+    background-color: #dbdbdb;
+}
+
+.card-service {
+    background-color: #e5e5e5;
+}
+
+.card-care {
+    background-color: #ececec;
+}
+
+/* Patient Info Section */
+.patient-info {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: 150px 150px 150px;
+
+}
+
+.card1{
+    background-color: #dbdbdb;
+}
+
+.card2{
+    background-color: #e5e5e5;
+}
+
+.card3{
+    background-color: #ececec;
+}
+
+.card4{
+    background-color: #f2f2f2;
+}
+
+.card5{
+    background-color: #f9f9f9;
+}
+
+.card6{
+    background-color: #fafafa;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 9999999999; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 200px;
+top: 10px;
+width: 80%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+#myBtn {
+cursor: pointer;
+}
+
+/* The Modal Close Button */
+.close {
+color: #aaaaaa;
+display: flex;
+font-size: 28px;
+font-weight: bold;
+justify-content: right;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+
   
