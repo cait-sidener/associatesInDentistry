@@ -69,7 +69,7 @@ ul {
 }
 
 @media (max-width: 700px) {
-  .container {
+  .cont {
     grid-template-areas: 
     "header     header      header"
     "content    content     content"
@@ -81,7 +81,7 @@ ul {
 /* Specific stuffs */
 
 /* Container with header, sidebar, content, and footer */
-.container {
+.cont {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(5, 1fr);
@@ -92,7 +92,7 @@ ul {
     "footer     footer    footer        footer      footer";
 }
 
-.container > .footer {
+.cont > .footer {
   bottom: 0;
   border: solid #a8b7b7; 
   grid-area: footer;
@@ -103,20 +103,20 @@ ul {
   z-index: -1;
 }
 
-.container > .header {
+.cont > .header {
   border: solid #a8b7b7; 
   grid-area: header;
   grid-template-columns: 7fr 7fr;
 }
 
-.container > .item1 {
+.cont > .item1 {
   border: solid #a8b7b7; 
   grid-area: sidebar-1;
   position: sticky;
   top: 50px;
 }
 
-.container > .item2 {
+.cont > .item2 {
   border: solid #a8b7b7; 
   grid-area: content;
   z-index: -2

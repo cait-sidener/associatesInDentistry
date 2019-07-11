@@ -12,551 +12,794 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="cont">
 
     <div class="item header">
-        <div class='title'>
-            <h1>Associates in Dentistry Associates <img alt='registered trademark' src='assets/images/icons8-registered-trademark-26.png'></h1>
-            <h2><i>The Ultimate Dental Experience</i></h2>
-        </div>
-        <div class='address'>
-            <h4>306 East 23rd Street, Lawrence, Kansas 66046</h4>
-            <h4>CALL: <a href='facetime:7858434333'>785-843-4333</a></h4>
-        </div>
+      <div class='title'>
+        <h1>Associates in Dentistry Associates <img alt='registered trademark'
+            src='assets/images/icons8-registered-trademark-26.png'></h1>
+        <h2><i>The Ultimate Dental Experience</i></h2>
+      </div>
+      <div class='address'>
+        <h4>306 East 23rd Street, Lawrence, Kansas 66046</h4>
+        <h4>CALL: <a href='facetime:7858434333'>785-843-4333</a></h4>
+      </div>
     </div>
     <div class="item item1">
-        <a class='page-link' href='#about-title'>About</a>
-        <a class='page-link' href='#doctors'>Doctors</a>
-        <a class='page-link' href='#staff'>Staff</a>
-        <a class='page-link' href='#patient-info'>Patient Info</a>
-        <a class='page-link' href='#faq'>FAQ</a>
-        <a class='page-link' id="myBtn">Contact Us</a>
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
-                <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-                <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.11975" type="text/javascript"></script>
-                <script type="text/javascript">
-                   JotForm.setConditions([{"action":[{"id":"action_1562703496784","field":"6","visibility":"Require","isError":false}],"id":"1562703511675","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1562703496784","field":"6","operator":"isEmpty","value":"","isError":false}],"type":"require"},{"action":[{"id":"action_1562703475173","field":"4","visibility":"Require","isError":false}],"id":"1562703489614","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1562703475173","field":"4","operator":"isEmpty","value":"","isError":false}],"type":"require"},{"action":[{"id":"action_1562703442871","field":"3","visibility":"Require","isError":false}],"id":"1562703462199","index":"2","link":"Any","priority":"2","terms":[{"id":"term_1562703442871","field":"3","operator":"isEmpty","value":"","isError":false}],"type":"require"}]);
-                    JotForm.init(function(){
-                JotForm.initCaptcha('input_7');
-                $('input_7_reload').observe('click',function(){ JotForm.reloadCaptcha('input_7') })
-                      JotForm.alterTexts(undefined);
-                    JotForm.clearFieldOnHide="disable";
-                    JotForm.submitError="jumpToFirstError";
-                    /*INIT-END*/
-                    });
-                
-                   JotForm.prepareCalculationsOnTheFly([null,null,null,{"description":"","name":"name","qid":"3","text":"Name","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"message","qid":"6","subLabel":"","text":"Message","type":"control_textarea"},{"description":"","name":"enterThe","qid":"7","text":"Enter the message as it's shown","type":"control_captcha"},{"name":"submit","qid":"8","text":"Submit","type":"control_button"}]);
-                   setTimeout(function() {
-                JotForm.paymentExtrasOnTheFly([null,null,null,{"description":"","name":"name","qid":"3","text":"Name","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"message","qid":"6","subLabel":"","text":"Message","type":"control_textarea"},{"description":"","name":"enterThe","qid":"7","text":"Enter the message as it's shown","type":"control_captcha"},{"name":"submit","qid":"8","text":"Submit","type":"control_button"}]);}, 20); 
-                </script>
-                <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.11975" rel="stylesheet" type="text/css" />
-                <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.11975" />
-                <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.11975" />
-                <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
-                <style type="text/css">
-                    .form-label-left{
-                        width:150px;
-                    }
-                    .form-line{
-                        padding-top:12px;
-                        padding-bottom:12px;
-                    }
-                    .form-label-right{
-                        width:150px;
-                    }
-                    .form-all{
-                        width:690px;
-                        color:#555 !important;
-                        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
-                        font-size:14px;
-                    }
-                </style>
-                
-                <style type="text/css" id="form-designer-style">
-                    /* Injected CSS Code */
-                .form-label.form-label-auto {
-                        
-                        display: inline-block;
-                        float: left;
-                        text-align: left;
-                      
-                      } /*PREFERENCES STYLE*/
-                    .form-all {
-                      font-family: Lucida Grande, sans-serif;
-                    }
-                    .form-all .qq-upload-button,
-                    .form-all .form-submit-button,
-                    .form-all .form-submit-reset,
-                    .form-all .form-submit-print {
-                      font-family: Lucida Grande, sans-serif;
-                    }
-                    .form-all .form-pagebreak-back-container,
-                    .form-all .form-pagebreak-next-container {
-                      font-family: Lucida Grande, sans-serif;
-                    }
-                    .form-header-group {
-                      font-family: Lucida Grande, sans-serif;
-                    }
-                    .form-label {
-                      font-family: Lucida Grande, sans-serif;
-                    }
-                  
-                    .form-label.form-label-auto {
-                      
-                    display: inline-block;
-                    float:left;
-                    text-align: left;
-                  
-                    }
-                  
-                    .form-line {
-                      margin-top: 12px;
-                      margin-bottom: 12px;
-                    }
-                  
-                    .form-all {
-                      width: 690px;
-                    }
-                  
-                    .form-label-left,
-                    .form-label-right,
-                    .form-label-left.form-label-auto,
-                    .form-label-right.form-label-auto {
-                      width: 150px;
-                    }
-                  
-                    .form-all {
-                      font-size: 14px
-                    }
-                    .form-all .qq-upload-button,
-                    .form-all .qq-upload-button,
-                    .form-all .form-submit-button,
-                    .form-all .form-submit-reset,
-                    .form-all .form-submit-print {
-                      font-size: 14px
-                    }
-                    .form-all .form-pagebreak-back-container,
-                    .form-all .form-pagebreak-next-container {
-                      font-size: 14px
-                    }
-                  
-                    .supernova .form-all, .form-all {
-                      background-color: #fff;
-                      border: 1px solid transparent;
-                    }
-                  
-                    .form-all {
-                      color: #555;
-                    }
-                    .form-header-group .form-header {
-                      color: #555;
-                    }
-                    .form-header-group .form-subHeader {
-                      color: #555;
-                    }
-                    .form-label-top,
-                    .form-label-left,
-                    .form-label-right,
-                    .form-html,
-                    .form-checkbox-item label,
-                    .form-radio-item label {
-                      color: #555;
-                    }
-                    .form-sub-label {
-                      color: #6f6f6f;
-                    }
-                  
-                    .supernova {
-                      background-color: #d2e5e5;
-                    }
-                    .supernova body {
-                      background: transparent;
-                    }
-                  
-                    .form-textbox,
-                    .form-textarea,
-                    .form-radio-other-input,
-                    .form-checkbox-other-input,
-                    .form-captcha input,
-                    .form-spinner input {
-                      background-color: #fff;
-                    }
-                  
-                    .supernova {
-                      background-image: none;
-                    }
-                    #stage {
-                      background-image: none;
-                    }
-                  
-                    .form-all {
-                      background-image: none;
-                    }
-                  
-                  .ie-8 .form-all:before { display: none; }
-                  .ie-8 {
-                    margin-top: auto;
-                    margin-top: initial;
-                  }
-                  
-                  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
-                    /* Injected CSS Code */
-                </style>
-                
-                <form class="jotform-form" action="https://submit.jotform.us/submit/91896354688175/" method="post" name="form_91896354688175" id="91896354688175" accept-charset="utf-8">
-                  <input type="hidden" name="formID" value="91896354688175" />
-                  <div role="main" class="form-all">
-                    <ul class="form-section page-section">
-                      <li class="form-line jf-required" data-type="control_fullname" id="id_3">
-                        <label class="form-label form-label-left form-label-auto" id="label_3" for="first_3">
-                          Name
-                          <span class="form-required">
-                            *
-                          </span>
-                        </label>
-                        <div id="cid_3" class="form-input jf-required">
-                          <div data-wrapper-react="true">
-                            <span class="form-sub-label-container" style="vertical-align:top">
-                              <input type="text" id="first_3" name="q3_name[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
-                              <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px"> First Name </label>
-                            </span>
-                            <span class="form-sub-label-container" style="vertical-align:top">
-                              <input type="text" id="last_3" name="q3_name[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last" required="" />
-                              <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px"> Last Name </label>
-                            </span>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="form-line jf-required" data-type="control_email" id="id_4">
-                        <label class="form-label form-label-left form-label-auto" id="label_4" for="input_4">
-                          Email
-                          <span class="form-required">
-                            *
-                          </span>
-                        </label>
-                        <div id="cid_4" class="form-input jf-required">
-                          <span class="form-sub-label-container" style="vertical-align:top">
-                            <input type="email" id="input_4" name="q4_email" class="form-textbox validate[required, Email]" size="30" value="" data-component="email" aria-labelledby="label_4 sublabel_input_4" required="" />
-                            <label class="form-sub-label" for="input_4" id="sublabel_input_4" style="min-height:13px"> example@example.com </label>
-                          </span>
-                        </div>
-                      </li>
-                      <li class="form-line" data-type="control_phone" id="id_5">
-                        <label class="form-label form-label-left form-label-auto" id="label_5" for="input_5_area"> Phone Number </label>
-                        <div id="cid_5" class="form-input">
-                          <div data-wrapper-react="true">
-                            <span class="form-sub-label-container" style="vertical-align:top">
-                              <input type="tel" id="input_5_area" name="q5_phoneNumber[area]" class="form-textbox" size="6" value="" data-component="areaCode" aria-labelledby="label_5 sublabel_5_area" />
-                              <span class="phone-separate" aria-hidden="true">
-                                 -
-                              </span>
-                              <label class="form-sub-label" for="input_5_area" id="sublabel_5_area" style="min-height:13px"> Area Code </label>
-                            </span>
-                            <span class="form-sub-label-container" style="vertical-align:top">
-                              <input type="tel" id="input_5_phone" name="q5_phoneNumber[phone]" class="form-textbox" size="12" value="" data-component="phone" aria-labelledby="label_5 sublabel_5_phone" />
-                              <label class="form-sub-label" for="input_5_phone" id="sublabel_5_phone" style="min-height:13px"> Phone Number </label>
-                            </span>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="form-line jf-required" data-type="control_textarea" id="id_6">
-                        <label class="form-label form-label-left form-label-auto" id="label_6" for="input_6">
-                          Message
-                          <span class="form-required">
-                            *
-                          </span>
-                        </label>
-                        <div id="cid_6" class="form-input jf-required">
-                          <textarea id="input_6" class="form-textarea validate[required]" name="q6_message" cols="40" rows="6" data-component="textarea" required="" aria-labelledby="label_6"></textarea>
-                        </div>
-                      </li>
-                      <li class="form-line jf-required" data-type="control_captcha" id="id_7">
-                        <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
-                          Enter the message as it's shown
-                          <span class="form-required">
-                            *
-                          </span>
-                        </label>
-                        <div id="cid_7" class="form-input jf-required">
-                          <div class="form-captcha" data-component="captcha">
-                            <label for="input_7"> <img alt="Captcha - Reload if not displayed" id="input_7_captcha" class="form-captcha-image" style="background:url(https://cdn.jotfor.ms/images/loader-big.gif) no-repeat center" src="https://cdn.jotfor.ms/images/blank.gif" width="150" height="41" /> </label>
-                            <div style="white-space:nowrap">
-                              <input type="text" id="input_7" class="form-textbox validate[required]" name="captcha" style="width:130px" required="" />
-                              <img src="https://cdn.jotfor.ms/images/reload.png" alt="Reload" style="cursor:pointer;vertical-align:middle" id="input_7_reload" />
-                              <input type="hidden" name="captcha_id" id="input_7_captcha_id" value="0" />
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="form-line" data-type="control_button" id="id_8">
-                        <div id="cid_8" class="form-input-wide">
-                          <div style="margin-left:156px" class="form-buttons-wrapper">
-                            <button id="input_8" type="submit" class="form-submit-button" data-component="button">
-                              Submit
-                            </button>
-                          </div>
-                        </div>
-                      </li>
-                      <li style="display:none">
-                        Should be Empty:
-                        <input type="text" name="website" value="" />
-                      </li>
-                    </ul>
+      <a class='page-link' href='#about-title'>About</a>
+      <a class='page-link' href='#doctors'>Doctors</a>
+      <a class='page-link' href='#staff'>Staff</a>
+      <a class='page-link' href='#patient-info'>Patient Info</a>
+      <a class='page-link' href='#faq'>FAQ</a>
+      <a class='page-link' id="myBtn">Contact Us</a>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+          <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+          <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.11975" type="text/javascript"></script>
+          <script type="text/javascript">
+            JotForm.setConditions([{
+              "action": [{
+                "id": "action_1562703496784",
+                "field": "6",
+                "visibility": "Require",
+                "isError": false
+              }],
+              "id": "1562703511675",
+              "index": "0",
+              "link": "Any",
+              "priority": "0",
+              "terms": [{
+                "id": "term_1562703496784",
+                "field": "6",
+                "operator": "isEmpty",
+                "value": "",
+                "isError": false
+              }],
+              "type": "require"
+            }, {
+              "action": [{
+                "id": "action_1562703475173",
+                "field": "4",
+                "visibility": "Require",
+                "isError": false
+              }],
+              "id": "1562703489614",
+              "index": "1",
+              "link": "Any",
+              "priority": "1",
+              "terms": [{
+                "id": "term_1562703475173",
+                "field": "4",
+                "operator": "isEmpty",
+                "value": "",
+                "isError": false
+              }],
+              "type": "require"
+            }, {
+              "action": [{
+                "id": "action_1562703442871",
+                "field": "3",
+                "visibility": "Require",
+                "isError": false
+              }],
+              "id": "1562703462199",
+              "index": "2",
+              "link": "Any",
+              "priority": "2",
+              "terms": [{
+                "id": "term_1562703442871",
+                "field": "3",
+                "operator": "isEmpty",
+                "value": "",
+                "isError": false
+              }],
+              "type": "require"
+            }]);
+            JotForm.init(function () {
+              JotForm.initCaptcha('input_7');
+              $('input_7_reload').observe('click', function () {
+                JotForm.reloadCaptcha('input_7')
+              })
+              JotForm.alterTexts(undefined);
+              JotForm.clearFieldOnHide = "disable";
+              JotForm.submitError = "jumpToFirstError";
+              /*INIT-END*/
+            });
+
+            JotForm.prepareCalculationsOnTheFly([null, null, null, {
+              "description": "",
+              "name": "name",
+              "qid": "3",
+              "text": "Name",
+              "type": "control_fullname"
+            }, {
+              "description": "",
+              "name": "email",
+              "qid": "4",
+              "subLabel": "example@example.com",
+              "text": "Email",
+              "type": "control_email"
+            }, {
+              "description": "",
+              "name": "phoneNumber",
+              "qid": "5",
+              "text": "Phone Number",
+              "type": "control_phone"
+            }, {
+              "description": "",
+              "name": "message",
+              "qid": "6",
+              "subLabel": "",
+              "text": "Message",
+              "type": "control_textarea"
+            }, {
+              "description": "",
+              "name": "enterThe",
+              "qid": "7",
+              "text": "Enter the message as it's shown",
+              "type": "control_captcha"
+            }, {
+              "name": "submit",
+              "qid": "8",
+              "text": "Submit",
+              "type": "control_button"
+            }]);
+            setTimeout(function () {
+              JotForm.paymentExtrasOnTheFly([null, null, null, {
+                "description": "",
+                "name": "name",
+                "qid": "3",
+                "text": "Name",
+                "type": "control_fullname"
+              }, {
+                "description": "",
+                "name": "email",
+                "qid": "4",
+                "subLabel": "example@example.com",
+                "text": "Email",
+                "type": "control_email"
+              }, {
+                "description": "",
+                "name": "phoneNumber",
+                "qid": "5",
+                "text": "Phone Number",
+                "type": "control_phone"
+              }, {
+                "description": "",
+                "name": "message",
+                "qid": "6",
+                "subLabel": "",
+                "text": "Message",
+                "type": "control_textarea"
+              }, {
+                "description": "",
+                "name": "enterThe",
+                "qid": "7",
+                "text": "Enter the message as it's shown",
+                "type": "control_captcha"
+              }, {
+                "name": "submit",
+                "qid": "8",
+                "text": "Submit",
+                "type": "control_button"
+              }]);
+            }, 20);
+          </script>
+          <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.11975" rel="stylesheet" type="text/css" />
+          <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.11975" />
+          <link type="text/css" media="print" rel="stylesheet"
+            href="https://cdn.jotfor.ms/css/printForm.css?3.3.11975" />
+          <link type="text/css" rel="stylesheet"
+            href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?" />
+          <style type="text/css">
+            .form-label-left {
+              width: 150px;
+            }
+
+            .form-line {
+              padding-top: 12px;
+              padding-bottom: 12px;
+            }
+
+            .form-label-right {
+              width: 150px;
+            }
+
+            .form-all {
+              width: 690px;
+              color: #555 !important;
+              font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+              font-size: 14px;
+            }
+          </style>
+
+          <style type="text/css" id="form-designer-style">
+            /* Injected CSS Code */
+            .form-label.form-label-auto {
+
+              display: inline-block;
+              float: left;
+              text-align: left;
+
+            }
+
+            /*PREFERENCES STYLE*/
+            .form-all {
+              font-family: Lucida Grande, sans-serif;
+            }
+
+            .form-all .qq-upload-button,
+            .form-all .form-submit-button,
+            .form-all .form-submit-reset,
+            .form-all .form-submit-print {
+              font-family: Lucida Grande, sans-serif;
+            }
+
+            .form-all .form-pagebreak-back-container,
+            .form-all .form-pagebreak-next-container {
+              font-family: Lucida Grande, sans-serif;
+            }
+
+            .form-header-group {
+              font-family: Lucida Grande, sans-serif;
+            }
+
+            .form-label {
+              font-family: Lucida Grande, sans-serif;
+            }
+
+            .form-label.form-label-auto {
+
+              display: inline-block;
+              float: left;
+              text-align: left;
+
+            }
+
+            .form-line {
+              margin-top: 12px;
+              margin-bottom: 12px;
+            }
+
+            .form-all {
+              width: 690px;
+            }
+
+            .form-label-left,
+            .form-label-right,
+            .form-label-left.form-label-auto,
+            .form-label-right.form-label-auto {
+              width: 150px;
+            }
+
+            .form-all {
+              font-size: 14px
+            }
+
+            .form-all .qq-upload-button,
+            .form-all .qq-upload-button,
+            .form-all .form-submit-button,
+            .form-all .form-submit-reset,
+            .form-all .form-submit-print {
+              font-size: 14px
+            }
+
+            .form-all .form-pagebreak-back-container,
+            .form-all .form-pagebreak-next-container {
+              font-size: 14px
+            }
+
+            .supernova .form-all,
+            .form-all {
+              background-color: #fff;
+              border: 1px solid transparent;
+            }
+
+            .form-all {
+              color: #555;
+            }
+
+            .form-header-group .form-header {
+              color: #555;
+            }
+
+            .form-header-group .form-subHeader {
+              color: #555;
+            }
+
+            .form-label-top,
+            .form-label-left,
+            .form-label-right,
+            .form-html,
+            .form-checkbox-item label,
+            .form-radio-item label {
+              color: #555;
+            }
+
+            .form-sub-label {
+              color: #6f6f6f;
+            }
+
+            .supernova {
+              background-color: #d2e5e5;
+            }
+
+            .supernova body {
+              background: transparent;
+            }
+
+            .form-textbox,
+            .form-textarea,
+            .form-radio-other-input,
+            .form-checkbox-other-input,
+            .form-captcha input,
+            .form-spinner input {
+              background-color: #fff;
+            }
+
+            .supernova {
+              background-image: none;
+            }
+
+            #stage {
+              background-image: none;
+            }
+
+            .form-all {
+              background-image: none;
+            }
+
+            .ie-8 .form-all:before {
+              display: none;
+            }
+
+            .ie-8 {
+              margin-top: auto;
+              margin-top: initial;
+            }
+
+            /*PREFERENCES STYLE*/
+            /*__INSPECT_SEPERATOR__*/
+            /* Injected CSS Code */
+          </style>
+
+          <form class="jotform-form" action="https://submit.jotform.us/submit/91896354688175/" method="post"
+            name="form_91896354688175" id="91896354688175" accept-charset="utf-8">
+            <input type="hidden" name="formID" value="91896354688175" />
+            <div role="main" class="form-all">
+              <ul class="form-section page-section">
+                <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+                  <label class="form-label form-label-left form-label-auto" id="label_3" for="first_3">
+                    Name
+                    <span class="form-required">
+                      *
+                    </span>
+                  </label>
+                  <div id="cid_3" class="form-input jf-required">
+                    <div data-wrapper-react="true">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="text" id="first_3" name="q3_name[first]" class="form-textbox validate[required]"
+                          size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first"
+                          required="" />
+                        <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px"> First
+                          Name </label>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="text" id="last_3" name="q3_name[last]" class="form-textbox validate[required]"
+                          size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last"
+                          required="" />
+                        <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px"> Last
+                          Name </label>
+                      </span>
+                    </div>
                   </div>
-                  <script>
-                  JotForm.showJotFormPowered = "new_footer";
-                  </script>
-                  <input type="hidden" id="simple_spc" name="simple_spc" value="91896354688175" />
-                  <script type="text/javascript">
-                  document.getElementById("si" + "mple" + "_spc").value = "91896354688175-91896354688175";
-                  </script>
-                  
-                </form>            
+                </li>
+                <li class="form-line jf-required" data-type="control_email" id="id_4">
+                  <label class="form-label form-label-left form-label-auto" id="label_4" for="input_4">
+                    Email
+                    <span class="form-required">
+                      *
+                    </span>
+                  </label>
+                  <div id="cid_4" class="form-input jf-required">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="email" id="input_4" name="q4_email" class="form-textbox validate[required, Email]"
+                        size="30" value="" data-component="email" aria-labelledby="label_4 sublabel_input_4"
+                        required="" />
+                      <label class="form-sub-label" for="input_4" id="sublabel_input_4" style="min-height:13px">
+                        example@example.com </label>
+                    </span>
+                  </div>
+                </li>
+                <li class="form-line" data-type="control_phone" id="id_5">
+                  <label class="form-label form-label-left form-label-auto" id="label_5" for="input_5_area"> Phone
+                    Number </label>
+                  <div id="cid_5" class="form-input">
+                    <div data-wrapper-react="true">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="tel" id="input_5_area" name="q5_phoneNumber[area]" class="form-textbox" size="6"
+                          value="" data-component="areaCode" aria-labelledby="label_5 sublabel_5_area" />
+                        <span class="phone-separate" aria-hidden="true">
+                          -
+                        </span>
+                        <label class="form-sub-label" for="input_5_area" id="sublabel_5_area" style="min-height:13px">
+                          Area Code </label>
+                      </span>
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="tel" id="input_5_phone" name="q5_phoneNumber[phone]" class="form-textbox" size="12"
+                          value="" data-component="phone" aria-labelledby="label_5 sublabel_5_phone" />
+                        <label class="form-sub-label" for="input_5_phone" id="sublabel_5_phone" style="min-height:13px">
+                          Phone Number </label>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="form-line jf-required" data-type="control_textarea" id="id_6">
+                  <label class="form-label form-label-left form-label-auto" id="label_6" for="input_6">
+                    Message
+                    <span class="form-required">
+                      *
+                    </span>
+                  </label>
+                  <div id="cid_6" class="form-input jf-required">
+                    <textarea id="input_6" class="form-textarea validate[required]" name="q6_message" cols="40" rows="6"
+                      data-component="textarea" required="" aria-labelledby="label_6"></textarea>
+                  </div>
+                </li>
+                <li class="form-line jf-required" data-type="control_captcha" id="id_7">
+                  <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
+                    Enter the message as it's shown
+                    <span class="form-required">
+                      *
+                    </span>
+                  </label>
+                  <div id="cid_7" class="form-input jf-required">
+                    <div class="form-captcha" data-component="captcha">
+                      <label for="input_7"> <img alt="Captcha - Reload if not displayed" id="input_7_captcha"
+                          class="form-captcha-image"
+                          style="background:url(https://cdn.jotfor.ms/images/loader-big.gif) no-repeat center"
+                          src="https://cdn.jotfor.ms/images/blank.gif" width="150" height="41" /> </label>
+                      <div style="white-space:nowrap">
+                        <input type="text" id="input_7" class="form-textbox validate[required]" name="captcha"
+                          style="width:130px" required="" />
+                        <img src="https://cdn.jotfor.ms/images/reload.png" alt="Reload"
+                          style="cursor:pointer;vertical-align:middle" id="input_7_reload" />
+                        <input type="hidden" name="captcha_id" id="input_7_captcha_id" value="0" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="form-line" data-type="control_button" id="id_8">
+                  <div id="cid_8" class="form-input-wide">
+                    <div style="margin-left:156px" class="form-buttons-wrapper">
+                      <button id="input_8" type="submit" class="form-submit-button" data-component="button">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li style="display:none">
+                  Should be Empty:
+                  <input type="text" name="website" value="" />
+                </li>
+              </ul>
             </div>
-            </div>
+            <script>
+              JotForm.showJotFormPowered = "new_footer";
+            </script>
+            <input type="hidden" id="simple_spc" name="simple_spc" value="91896354688175" />
+            <script type="text/javascript">
+              document.getElementById("si" + "mple" + "_spc").value = "91896354688175-91896354688175";
+            </script>
+
+          </form>
+        </div>
+      </div>
     </div>
     <div class="item item2">
-        <h2 id='about-title'>About Us</h2>
-        <div class='about' id='about'>
-            <div class='card card-experience'>
-                <h3>Dental Experience</h3>
-                <p>Our dentists are committed to providing great dental care and excellent service, something we have accomplished since 1945.</p>
-            </div>
-            <div class='card card-service'>
-                <h3>Amazing Service</h3>
-                <p>Our excellent and caring staff are committed to exceptional service and technical excellence.</p>
-            </div>
-            <div class='card card-care'>
-                <h3>Excellent Care</h3>
-                <p>Our commitment to exceptional patient care gives you the tools you need to have that beautiful smile you deserve.</p>
-            </div>
-            <br/>
-            <br/>
-            <br/>
+      <h2 id='about-title'>About Us</h2>
+      <div class='about' id='about'>
+        <div class='card card-experience'>
+          <h3>Dental Experience</h3>
+          <p>Our dentists are committed to providing great dental care and excellent service, something we have
+            accomplished since 1945.</p>
         </div>
-
-        <div class='doctors' id='doctors'>
-            <br/>
-            <h2>Meet Our Doctors</h3>
-            <div class='doc-stats'>
-                <img alt='photo of doctor' class='image' src='assets/images/kincaidjr.jpg'>
-                <br/>
-                <h3>Charles L. Kincaid</h3>
-                <p>
-                    Dr. Charles Kincaid is a lifelong resident of Lawrence, Kansas. He graduated from Lawrence High School in 1966. He received his B.A. from the University of Kansas in 1971 and his Doctor of Dental Surgery from the University of Missouri, Kansas City, MO in 1976.
-
-                        Dr. Kincaid has completed extensive courses with the Society of Occlusal Studies and the Implant Society of Alabama. He is an active member of the Kansas Society of Orthodontics for the General Practitioner, the Kansas City Veterans Study Club, the American Dental Association and the Douglas County Dental Society. He is also involved with the American Association of Dental Research.
-                        
-                        Dr. Kincaid is skilled in all phases or restorative and endodontic dentistry, including mini-implants for dentures, veneers, crowns and bridges.
-                        
-                        Dr. Kincaid is married to Claudia Kincaid and they have one son, Ivan. Dr. Kincaid has three adult children: Jeffrey, Elizabeth and Benjamin. When away from the office Dr. Kincaid enjoys working on cars and he never misses an F1 race.
-                </p>
-                <br/>
-
-            </div>
-            <div class='doc-stats'>
-                <img alt='photo of doctor' class='image' src='assets/images/kincaid.jpg'>
-                <br/>
-                <h3>Paul K. Kincaid</h3>
-                <p>
-                        
-                        Dr. Paul Kincaid has made his home of Lawrence, Kansas ever since graduating from dental school right after WWII. He finished his B.A. from William Jewell College in Liberty, MO to later receive his Doctor of Dental Surgery from the University of Missouri, Kansas City, MO in 1945.
-
-                        Dr. Kincaid has an extensive experience in the dental field. He's been around the world learning new techniques that kept his skills up-to-date. Dr. Kincaid is an experienced dentist in all areas: Restorative, Crowns, Oral Surgery and Prosthodontics (Dentures).
-                        
-                        Dr. Kincaid is member of the American Dental Association and the Douglas County Dental Society. Dr. Kincaid has multiple recognitions and awards. His latest was a recognition from the Kansas Dental Board for his long practice. Also an active member among the Lawrence community who has served since 1945.
-                        
-                        Dr. Kincaid is the longest active practicing dentist in the State of Kansas.
-                        
-                        Dr. Kincaid was married to Mary Kincaid for 67 years. They have two sons: Charles Kincaid and Paul Kincaid Jr. In his spare time Dr. Kincaid enjoys working with wood, his bracelets are fantastic! He also enjoys spending time with his friends and family.
-                        
-                        After 70 years in the dental practice, Dr. Paul Kincaid retired March 2015. Congratulations on your retirement! It's been a real pleasure working with you!
-                </p>
-            </div>
-            <br/>
-            <br/>
+        <div class='card card-service'>
+          <h3>Amazing Service</h3>
+          <p>Our excellent and caring staff are committed to exceptional service and technical excellence.</p>
         </div>
-
-        <div class='staff' id='staff'>
-            <h2>Meet Our Staff</h2>
-            <h3>Hygienists</h3>
-            <p>
-                Our experienced dental hygienists always focus their experience in dental disease prevention. They are gentle and skilledin helping our patients reach their dental goals.
-            </p>
-            <ul style='columns:2;'>
-              <li><img alt='photo of hygienist' class='image' src='assets/images/kincaidjr.jpg'><h4>Hygienist #1</h4></li>
-              <br/>
-              <li><img alt='photo of hygienist' class='image' src='assets/images/kincaid.jpg'><h4>Hygienist #2</h4></li>  
-              <li><img alt='photo of hygienist' class='image' src='assets/images/kincaidjr.jpg'><h4>Hygienist #3</h4></li> 
-              <br/>
-              <li><img alt='photo of hygienist' class='image' src='assets/images/kincaid.jpg'><h4>Hygienist #4</h4></li>   
-            </ul>
-            <h3>Assistants</h3>
-            <p>
-                Our dental assistants always ready to help you with your dental needs. They are skilled and trained to meet to our and your high standards
-            </p>
-            <ul style='columns:2;'>
-                <li><img alt='photo of assistant' class='image' src='assets/images/kincaid.jpg'><h4>Assistant #1</h4></li>
-                <br/>
-                <li><img alt='photo of assistant' class='image' src='assets/images/kincaidjr.jpg'><h4>Assistant #2</h4></li>  
-                <li><img alt='photo of assistant' class='image' src='assets/images/kincaid.jpg'><h4>Assistant #3</h4></li>
-                <br/>
-                <li><img alt='photo of assistant' class='image' src='assets/images/kincaidjr.jpg'><h4>Assistant #4</h4></li>  
-
-            </ul>
+        <div class='card card-care'>
+          <h3>Excellent Care</h3>
+          <p>Our commitment to exceptional patient care gives you the tools you need to have that beautiful smile you
+            deserve.</p>
         </div>
+        <br />
+        <br />
+        <br />
+      </div>
 
-        <h2>Patient Information</h2>
-        <div class='patient-info' id='patient-info'>
-            <div class='card card1'>
-                <div class='card-body'>
-                    <h4='card-title'><b>Financial Policy</b></h4>
-                    <p>We require payment in full at the time of your dental service.</p>
-                    <a href='#'>Click here for more information</a>
-                </div>
-            </div>
-            <div class='card card2'>
-                <img class='image' class="card-img-top" src="assets/images/assindent.jpg" alt="Card image" style="width:100%">
-                <div class='card-body'>
-                    <h4='card-title'><b>Payment Options</b></h4>
-                    <p>We accept cash, personal checks, money orders, and most major credit cards.</p>
-                </div>
-            </div>
-            <div class='card card3'>
-                <img class='image' class="card-img-top" src="assets/images/assindent.jpg" alt="Card image" style="width:100%">
-                <div class='card-body'>
-                    <h4='card-title'><b>Dental Insurance</b></h4>
-                    <p>We are in-network with most insurance plans. We will gladly file your claim with your insurance.</p>
-                </div>
-            </div>
-            <div class='card card4'>
-                <img class='image' class="card-img-top" src="assets/images/assindent.jpg" alt="Card image" style="width:100%">
-                <div class='card-body'>
-                    <h4='card-title'><b>Financing Available</b></h4>
-                    <p>We are pleased to accept CareCredit.</p>
-                    <a href='#'>Click here for more information</a>
-                </div>
-            </div>
-            <div class='card card5'>
-                <img class='image' class="card-img-top" src="assets/images/assindent.jpg" alt="Card image" style="width:100%">
-                <div class='card-body'>
-                    <h4='card-title'><b>Pay Your Bill Online</b></h4>
-                    <a href='#'>Pay Now</a>
-                </div>
-            </div>   
-            <div class='card card6'>
-                <img class='image' class="card-img-top" src="assets/images/assindent.jpg" alt="Card image" style="width:100%">
-                <div class='card-body'>
-                    <h4='card-title'><b>Disclaimer and Privacy</b></h4>
-                    <p>Please take a moment to review our website and office <a href='#'>policies and disclaimers</a> and our <a href='#'>Non-Discrimination Policy</a>.</p>
-                </div>
-            </div>        
-        </div>
+      <div class='doctors' id='doctors'>
+        <br />
+        <h2>Meet Our Doctors</h3>
+          <div class='doc-stats'>
+            <img alt='photo of doctor' class='image' src='assets/images/kincaidjr.jpg'>
+            <br />
+            <h3>Charles L. Kincaid</h3>
+            <p>
+              Dr. Charles Kincaid is a lifelong resident of Lawrence, Kansas. He graduated from Lawrence High School in
+              1966. He received his B.A. from the University of Kansas in 1971 and his Doctor of Dental Surgery from the
+              University of Missouri, Kansas City, MO in 1976.
 
-        <div class='faq' id='faq'>
-                <br/>
-                <br/>
-            <h2>Frequently Asked Questions</h2>
-            <h4>I am a new patient, what happens on my first visit?</h4>
-            <p>
-                Please arrive 10 minutes before you appointment so you can fill out the paperwork needed for you patient file and start your treatment on time. Remember to bring your insurance card and one form of I.D. so we can also add them to it. As a new patient, your exam and cleaning will take approximately one hour, depending on your oral health this time may vary. if you do not have current x-rays, we can take them. If you had them taken in a different dental office, please make sure to contact your previous dentist and request a copy. We accept digital x-rays and we prefer that format.
-                Oral hygiene instructions will be given to you along with suggestions on how to take care of your teeth. If any further treatment is needed we will explain the problems found and present a treatment plan for you.
-                
+              Dr. Kincaid has completed extensive courses with the Society of Occlusal Studies and the Implant Society
+              of Alabama. He is an active member of the Kansas Society of Orthodontics for the General Practitioner, the
+              Kansas City Veterans Study Club, the American Dental Association and the Douglas County Dental Society. He
+              is also involved with the American Association of Dental Research.
+
+              Dr. Kincaid is skilled in all phases or restorative and endodontic dentistry, including mini-implants for
+              dentures, veneers, crowns and bridges.
+
+              Dr. Kincaid is married to Claudia Kincaid and they have one son, Ivan. Dr. Kincaid has three adult
+              children: Jeffrey, Elizabeth and Benjamin. When away from the office Dr. Kincaid enjoys working on cars
+              and he never misses an F1 race.
             </p>
-            <h4>How often should I see the dentist for a check up and a cleaning?</h4>
+            <br />
+
+          </div>
+          <div class='doc-stats'>
+            <img alt='photo of doctor' class='image' src='assets/images/kincaid.jpg'>
+            <br />
+            <h3>Paul K. Kincaid</h3>
             <p>
-                Most children and adults should see their dentist for a regular cleaning and check up every six months. People at a greater risk for oral diseases should have a dental checks more than twice a year. Going to regular checks will help to keep your gums and teeth healthy as well as to detect any early problems such as gun disease, oral cancer and cavities. This is the best way to maintain good oral health.
+
+              Dr. Paul Kincaid has made his home of Lawrence, Kansas ever since graduating from dental school right
+              after WWII. He finished his B.A. from William Jewell College in Liberty, MO to later receive his Doctor of
+              Dental Surgery from the University of Missouri, Kansas City, MO in 1945.
+
+              Dr. Kincaid has an extensive experience in the dental field. He's been around the world learning new
+              techniques that kept his skills up-to-date. Dr. Kincaid is an experienced dentist in all areas:
+              Restorative, Crowns, Oral Surgery and Prosthodontics (Dentures).
+
+              Dr. Kincaid is member of the American Dental Association and the Douglas County Dental Society. Dr.
+              Kincaid has multiple recognitions and awards. His latest was a recognition from the Kansas Dental Board
+              for his long practice. Also an active member among the Lawrence community who has served since 1945.
+
+              Dr. Kincaid is the longest active practicing dentist in the State of Kansas.
+
+              Dr. Kincaid was married to Mary Kincaid for 67 years. They have two sons: Charles Kincaid and Paul Kincaid
+              Jr. In his spare time Dr. Kincaid enjoys working with wood, his bracelets are fantastic! He also enjoys
+              spending time with his friends and family.
+
+              After 70 years in the dental practice, Dr. Paul Kincaid retired March 2015. Congratulations on your
+              retirement! It's been a real pleasure working with you!
             </p>
-            <h4>What is the difference between a crown and a filling?</h4>
-            <p>
-                A crown, also called cap, completely covers a tooth, and is used to restore the tooth to its normal shape and size. A crown is necsessary for a tooth that has been severely fractured (cracked), damaged or decayed. It also provides strength and durability and is specially important for teeth that are subject to great wear and abrasion, such as your back teeth (molars).
-                Dental fillings are of two main types: Silver (Amalgam) which is a mixture of mercury and alloy of silvers. This filling is hard and durable but not very esthetic. The second one is Composite (White) fillings. These fillings, also known as porcelain fillings or resin-based composites, are a mixture of tooth colored resin mixture filled with silicon dioxide. Following preparation, the detist places the composite layers on the tooth using a light specialized to harden each layer. The tooth is grinded and then a filling is placed shaping it to fit the tooth and restoring it.
-                When the tooth, after several fillings are placed, becomes thinner to the point where no further restoration is possible, a crown is recommended to cover what's left of the tooth and t keep it "alive".
-            </p>
-            <h4>What is TMJ?</h4>
-            <p>
-                The temporomandibular joint, also known as TMJ, is the ball and socket that connects the lower jaw to the bone on each side of the head. The temporomandibular joint is stabilized by muscles that make it possible to open and close the mouth. The pain, discomfort or tenderness in or around these are referred to as TMJ disorders.
-            </p>
-            <h4>
-                These are questions frequently asked by our patients. If you have any suggestions, please contact us so we can update this page with your suggestions!
-            </h4>
+          </div>
+          <br />
+          <br />
+      </div>
+
+      <div class='staff' id='staff'>
+        <h2>Meet Our Staff</h2>
+        <h3>Hygienists</h3>
+        <p><i>
+          Our experienced dental hygienists always focus their experience in dental disease prevention. They are gentle
+          and skilledin helping our patients reach their dental goals.
+        </i></p>
+        <ul style='columns:2;'>
+          <li><img alt='photo of hygienist' class='image' src='assets/images/kincaidjr.jpg'>
+            <h4>Hygienist #1</h4>
+          </li>
+          <br />
+          <li><img alt='photo of hygienist' class='image' src='assets/images/kincaid.jpg'>
+            <h4>Hygienist #2</h4>
+          </li>
+          <li><img alt='photo of hygienist' class='image' src='assets/images/kincaidjr.jpg'>
+            <h4>Hygienist #3</h4>
+          </li>
+          <br />
+          <li><img alt='photo of hygienist' class='image' src='assets/images/kincaid.jpg'>
+            <h4>Hygienist #4</h4>
+          </li>
+        </ul>
+        <h3>Assistants</h3>
+        <p><i>
+          Our dental assistants always ready to help you with your dental needs. They are skilled and trained to meet to
+          our and your high standards
+        </i></p>
+        <ul style='columns:2;'>
+          <li><img alt='photo of assistant' class='image' src='assets/images/kincaid.jpg'>
+            <h4>Assistant #1</h4>
+          </li>
+          <br />
+          <li><img alt='photo of assistant' class='image' src='assets/images/kincaidjr.jpg'>
+            <h4>Assistant #2</h4>
+          </li>
+          <li><img alt='photo of assistant' class='image' src='assets/images/kincaid.jpg'>
+            <h4>Assistant #3</h4>
+          </li>
+          <br />
+          <li><img alt='photo of assistant' class='image' src='assets/images/kincaidjr.jpg'>
+            <h4>Assistant #4</h4>
+          </li>
+
+        </ul>
+      </div>
+
+      <h2>Patient Information</h2>
+      <div class='patient-info' id='patient-info'>
+        <div class='card card1'>
+          <img class='image' class="card-img-top" src="assets/images/copay.png" alt="Card image" style="width:100%">
+          <div class='card-body'>
+            <h4='card-title'><b>Financial Policy</b></h4>
+              <p>We require payment in full at the time of your dental service.</p>
+              <a href='#'>Click here for more information</a>
+          </div>
         </div>
+        <div class='card card2'>
+          <img class='image' class="card-img-top" src="assets/images/paymentOptions.jpg" alt="Card image"
+            style="width:100%">
+          <div class='card-body'>
+            <h4='card-title'><b>Payment Options</b></h4>
+              <p>We accept cash, personal checks, money orders, and most major credit cards.</p>
+          </div>
+        </div>
+        <div class='card card3'>
+          <img class='image' class="card-img-top" src="assets/images/dentalInsurance.png" alt="Card image"
+            style="width:100%">
+          <div class='card-body'>
+            <h4='card-title'><b>Dental Insurance</b></h4>
+              <p>We are in-network with most insurance plans. We will gladly file your claim with your insurance.</p>
+          </div>
+        </div>
+        <div class='card card4'>
+          <img class='image' class="card-img-top" src="assets/images/CareCredit.png" alt="Card image"
+            style="width:100%">
+          <div class='card-body'>
+            <h4='card-title'><b>Financing Available</b></h4>
+              <p>We are pleased to accept CareCredit.</p>
+              <a href='#'>Click here for more information</a>
+          </div>
+        </div>
+        <div class='card card5'>
+          <img class='image' class="card-img-top" src="assets/images/payOnline.jpg" alt="Card image" style="width:100%">
+          <div class='card-body'>
+            <h4='card-title'><b>Pay Your Bill Online</b></h4>
+              <a href='#'>Pay Now</a>
+          </div>
+        </div>
+        <div class='card card6'>
+          <img class='image' class="card-img-top" src="assets/images/hipaa.jpg" alt="Card image" style="width:100%">
+          <div class='card-body'>
+            <h4='card-title'><b>Disclaimer and Privacy</b></h4>
+              <p>Please take a moment to review our website and office <a href='#'>policies and disclaimers</a> and our
+                <a href='#'>Non-Discrimination Policy</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='faq' id='faq'>
+        <br />
+        <br />
+        <h2>Frequently Asked Questions</h2>
+        <h4>I am a new patient, what happens on my first visit?</h4>
+        <p>
+          Please arrive 10 minutes before you appointment so you can fill out the paperwork needed for you patient file
+          and start your treatment on time. Remember to bring your insurance card and one form of I.D. so we can also
+          add them to it. As a new patient, your exam and cleaning will take approximately one hour, depending on your
+          oral health this time may vary. if you do not have current x-rays, we can take them. If you had them taken in
+          a different dental office, please make sure to contact your previous dentist and request a copy. We accept
+          digital x-rays and we prefer that format.
+          Oral hygiene instructions will be given to you along with suggestions on how to take care of your teeth. If
+          any further treatment is needed we will explain the problems found and present a treatment plan for you.
+
+        </p>
+        <h4>How often should I see the dentist for a check up and a cleaning?</h4>
+        <p>
+          Most children and adults should see their dentist for a regular cleaning and check up every six months. People
+          at a greater risk for oral diseases should have a dental checks more than twice a year. Going to regular
+          checks will help to keep your gums and teeth healthy as well as to detect any early problems such as gun
+          disease, oral cancer and cavities. This is the best way to maintain good oral health.
+        </p>
+        <h4>What is the difference between a crown and a filling?</h4>
+        <p>
+          A crown, also called cap, completely covers a tooth, and is used to restore the tooth to its normal shape and
+          size. A crown is necsessary for a tooth that has been severely fractured (cracked), damaged or decayed. It
+          also provides strength and durability and is specially important for teeth that are subject to great wear and
+          abrasion, such as your back teeth (molars).
+          Dental fillings are of two main types: Silver (Amalgam) which is a mixture of mercury and alloy of silvers.
+          This filling is hard and durable but not very esthetic. The second one is Composite (White) fillings. These
+          fillings, also known as porcelain fillings or resin-based composites, are a mixture of tooth colored resin
+          mixture filled with silicon dioxide. Following preparation, the detist places the composite layers on the
+          tooth using a light specialized to harden each layer. The tooth is grinded and then a filling is placed
+          shaping it to fit the tooth and restoring it.
+          When the tooth, after several fillings are placed, becomes thinner to the point where no further restoration
+          is possible, a crown is recommended to cover what's left of the tooth and t keep it "alive".
+        </p>
+        <h4>What is TMJ?</h4>
+        <p>
+          The temporomandibular joint, also known as TMJ, is the ball and socket that connects the lower jaw to the bone
+          on each side of the head. The temporomandibular joint is stabilized by muscles that make it possible to open
+          and close the mouth. The pain, discomfort or tenderness in or around these are referred to as TMJ disorders.
+        </p>
+        <h4>
+          These are questions frequently asked by our patients. If you have any suggestions, please contact us so we can
+          update this page with your suggestions!
+        </h4>
+      </div>
     </div>
 
     <div class="item footer">
-        <div class='details'>
-            <h3>Associates in Dentistry</h3>
-                <p>306 East 23rd Street</p>
-                <p>Lawrence, Kansas 66046</p>
-                <p><a href='facetime:7858434333'><b>785-843-4333</b></a></p>
-                <br/>
+      <div class='details'>
+        <h3>Associates in Dentistry</h3>
+        <p>306 East 23rd Street</p>
+        <p>Lawrence, Kansas 66046</p>
+        <p><a href='facetime:7858434333'><b>785-843-4333</b></a></p>
+        <br />
       </div>
       <div class='quick-links'>
-          <h3>Quick Links</h3>
-            <a href='#about-title'>About |</a>
-            <a href='#doctors'>Doctors |</a>
-            <a href='#staff'>Staff |</a>
-            <a href='#patient-info'>Patient Info |</a>
-            <a href='#faq'>FAQ</a>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+        <h3>Quick Links</h3>
+        <a href='#about-title'>About |</a>
+        <a href='#doctors'>Doctors |</a>
+        <a href='#staff'>Staff |</a>
+        <a href='#patient-info'>Patient Info |</a>
+        <a href='#faq'>FAQ</a>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
       <div class='follow'>
-          <h3>Follow Us</h3>
-          <a href='#' target='_blank'><img src='assets/images/facebook.png'></a> 
-          <a href='#' target='_blank'><img src='assets/images/yelp.png'></a> 
-          <a href='#' target='_blank'><img src='assets/images/gmail.png'></a>
-          <p>Design by Cait Sidener</p>
-          <br/>
-          <br/>
-          <br/>
+        <h3>Follow Us</h3>
+        <a href='#' target='_blank'><img src='assets/images/facebook.png'></a>
+        <a href='#' target='_blank'><img src='assets/images/yelp.png'></a>
+        <a href='#' target='_blank'><img src='assets/images/gmail.png'></a>
+        <p>Design by Cait Sidener</p>
+        <br />
+        <br />
+        <br />
       </div>
       <div class='hours'>
-          <h3>Office Hours</h3>
-          <p style='text-align:center'>Monday-Friday</p>
-          <p style='text-align:center'>8am-5pm</p>
-        <br/>
-        <br/>
-        <br/>
-      </div>    
+        <h3>Office Hours</h3>
+        <p style='text-align:center'>Monday-Friday</p>
+        <p style='text-align:center'>8am-5pm</p>
+        <br />
+        <br />
+        <br />
+      </div>
 
     </div>
   </div>
 
-<script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-          modal.style.display = "block";
-        }
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-        </script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
