@@ -9,24 +9,17 @@
     box-sizing: inherit;
   }
   
-  a:hover {
+  a:hover, a:link, a:visited {
     color: var(--black);
-  }
-
-  a:link {
-    color: var(--black);
-  }
-
-  a:visited {
-    color: var(--black);
+    cursor: pointer;
   }
   
   body {
+    background-attachment: fixed;
     background-image: url("./images/teeth2.png");
     min-height: calc(100vh - 100px);
-    margin: 0px;
-    padding: 0px;
-    background-attachment: fixed;
+    margin: 10px;
+    padding: 10px;
   }
 
   h1,
@@ -63,11 +56,11 @@
   }
   
   .item p {
-    margin: 0 0 5px 0;
+    margin: 0 5px 5px 5px;
   }
 
 .page-link {
-  background-color: #d2e5e5;
+  background-color: #d2e5e5 !important;
   font-size: 2em;
 }
 
@@ -102,12 +95,10 @@ ul {
 .container > .footer {
   bottom: 0;
   border: solid #a8b7b7; 
-
   grid-area: footer;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   height: 150px;
   margin: 0;
-  padding: 0;
   position: sticky;
   z-index: -1;
 }
@@ -140,15 +131,15 @@ ul {
 }
 
 .card-experience {
-    background-color: #dbdbdb;
+    background-color: #dbdbdb !important;
 }
 
 .card-service {
-    background-color: #e5e5e5;
+    background-color: #e5e5e5 !important;
 }
 
 .card-care {
-    background-color: #ececec;
+    background-color: #ececec !important;
 }
 
 /* Patient Info Section */
@@ -161,27 +152,27 @@ ul {
 }
 
 .card1{
-    background-color: #dbdbdb;
+    background-color: #dbdbdb !important;
 }
 
 .card2{
-    background-color: #e5e5e5;
+    background-color: #e5e5e5 !important;
 }
 
 .card3{
-    background-color: #ececec;
+    background-color: #ececec !important;
 }
 
 .card4{
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 !important;
 }
 
 .card5{
-    background-color: #f9f9f9;
+    background-color: #f9f9f9 !important;
 }
 
 .card6{
-    background-color: #fafafa;
+    background-color: #fafafa !important;
 }
 
 /* The Modal (background) */
