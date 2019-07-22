@@ -27,12 +27,6 @@
     align-items: center;
     width: 100%;
   }
-
-  .card-hygen {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
   
   #doctors-card {
     display: grid;
