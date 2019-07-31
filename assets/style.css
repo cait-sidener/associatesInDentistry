@@ -9,9 +9,10 @@
     box-sizing: inherit;
   }
   
-  a:hover, a:link, a:visited {
-    color: var(--black);
+  a:hover, a:active, a:link, a:visited {
+    color: var(--black) !important;
     cursor: pointer;
+    text-decoration: none;
   }
   
   body {
@@ -127,18 +128,16 @@ ul {
   }
 }
 
-/* Specific stuffs */
-
 /* Container with header, sidebar, content, and footer */
 .cont {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 
-    "header     header    header        header      header"
-    "sidebar-1  content   content       content     content"
-    ".          content   content       content     content"
-    "footer     footer    footer        footer      footer";
+    "header     header    header"
+    "sidebar-1  content   content"
+    ".          content   content"
+    "footer     footer    footer";
 }
 
 .cont > .footer {
@@ -146,7 +145,7 @@ ul {
   border: solid #a8b7b7; 
   grid-area: footer;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 175px;
+  height: 175px !important;
   margin: 0;
   position: sticky;
   z-index: -1;
