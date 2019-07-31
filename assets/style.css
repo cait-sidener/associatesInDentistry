@@ -22,16 +22,39 @@
     padding: 10px;
   }
 
+  .card-img-top {
+    margin-top: 10px;
+  }
+
   .card-doc {
     display: flex;
     align-items: center;
     width: 100%;
+  }
+
+  .details {
+    text-align: center;
   }
   
   #doctors-card {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
+  }
+
+
+  #patients-card {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .faq-check {
+    text-align: left !important;
+  }
+
+  .follow {
+    text-align: center;
   }
 
   h1,
@@ -41,6 +64,10 @@
   h5,
   h6 {
     margin: 0 0 15px 0 !important;
+    text-align: center;
+  }
+
+  .hours {
     text-align: center;
   }
 
@@ -57,7 +84,6 @@
   .image {
     display: flex;
     justify-content: flex-start;
-    padding-left: 2%;
   }
   .item {
     display: grid;
@@ -120,7 +146,7 @@ ul {
   border: solid #a8b7b7; 
   grid-area: footer;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 150px;
+  height: 175px;
   margin: 0;
   position: sticky;
   z-index: -1;
@@ -168,6 +194,10 @@ ul {
 
 .card-care {
     background-color: #ececec !important;
+}
+
+.card-title {
+  text-align: center !important;
 }
 
 /* Patient Info Section */
@@ -246,6 +276,12 @@ text-decoration: none;
 cursor: pointer;
 }
 
+p {
+  text-align: center !important;
+}
 
+.quick-links {
+  text-align: center;
+}
 
   
